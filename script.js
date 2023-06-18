@@ -1,12 +1,11 @@
-﻿
-$('#teslimedilendataTable').DataTable( {
+$('#dataTable').DataTable( {
 	"pageLength": 50,
 	"responsive": true,
 	"serverSide": true,
 	"columnDefs": [ {
 		"targets": 0,
 		"render": function ( data ) {
-		  var html = '<a href="../popup.asp?islem=musteri&musteriadi='+data+'">'+data+'</a>';
+		  var html = '<a href="../page.asp?islem=musteri&musteriadi='+data+'">'+data+'</a>';
 		  return html
 		}
 	  },
@@ -14,7 +13,7 @@ $('#teslimedilendataTable').DataTable( {
 	  {
 		"targets": 1,
 		"render": function ( data ) {
-		  var html =  '<a href="../popup.asp?islem=urun&urunadi='+data+'">'+data+'</a>';
+		  var html =  '<a href="../page.asp?islem=urun&urunadi='+data+'">'+data+'</a>';
 		  return html
 		}
 	  },
