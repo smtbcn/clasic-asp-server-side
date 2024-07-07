@@ -1,14 +1,3 @@
-﻿<%
-	'Veritabanı bağlantı bilgileri.
-	host		= ""
-	dbuser 		= ""
-	dbsifre 	= ""
-	db 			= ""
-
-	Set conn = Server.CreateObject("ADODB.Connection") 
-	conn.Open "DRIVER={MySQL ODBC 3.51 Driver}; SERVER="&host&"; UID="&dbuser&"; pwd="&dbsifre&"; db="&db&"; option=16387;" 
-%>
-
 <!DOCTYPE html>
 <html lang="en">
 
